@@ -2,12 +2,15 @@
   "name": "react-hw4",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
@@ -27,5 +30,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
